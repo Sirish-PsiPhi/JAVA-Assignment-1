@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Exercise1_3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		   int n=sc.nextInt();
+		   int sum=0;
+		   int number = 0;
+
+		   while(n>=0) {
+			   if(number % 3 == 0) {
+				   sum = sum + number;
+				   number = number + 2;
+				   n--;
+				   
+			   }
+			   else {
+				   n--;
+				   number = number +2;				  
+			   }
+			   
+		   }
+		   System.out.print(sum);
+	}
+
+}
